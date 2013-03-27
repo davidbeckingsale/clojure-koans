@@ -28,5 +28,5 @@
 
   "Numbers are not the only things one can reduce"
   (= "longest" (reduce (fn [a b]
-                         (if (< (len a) (len b)) b a))
+                         (if (< (count a) (count b)) b a))
                        ["which" "word" "is" "longest"])))
